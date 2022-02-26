@@ -1,19 +1,19 @@
 #
-# Copyright (C) 2018 The LineageOS Project
+# Copyright (C) 2022 The NullOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
-# Inherit from sdm845-common
--include device/xiaomi/sdm845-common/BoardConfigCommon.mk
+# Inherit from sc1-common
+-include device/sova/sc1-common/BoardConfigCommon.mk
 
-DEVICE_PATH := device/xiaomi/beryllium
+DEVICE_PATH := device/sova/cobra
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := beryllium
+TARGET_OTA_ASSERT_DEVICE := cobra
 
 # Kernel
-TARGET_KERNEL_CONFIG := beryllium_defconfig
+TARGET_KERNEL_CONFIG := cobra_defconfig
 
 # Inherit from the proprietary version
--include vendor/xiaomi/beryllium/BoardConfigVendor.mk
+-include vendor/sova/cobra/BoardConfigVendor.mk
